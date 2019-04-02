@@ -1,0 +1,20 @@
+
+<H1 class="center">fix location</H1>
+
+<label class="button">Pick up location:
+    <input type="text" name="input" ng-model="searchText"
+           ng-pattern="example.word" required ng-trim="false">
+  </label>
+  <br>
+  <br>
+
+<button class="button btn btn-primary" ng-click="findLocation()" ng-init="count=0">Find</button>
+<br>
+<br>
+
+<button class="button btn btn-primary" ng-click="findMyLocation()" ng-init="count=0">My Location</button>
+<br>
+<br>
+<div class="center" id='map'>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyqCTOrXMVEWfrJJwHkIcOVCwt00x_b34&libraries=places&callback=initMap" async defer></script>
+</div>
